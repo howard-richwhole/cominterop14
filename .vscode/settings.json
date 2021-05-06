@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.ts": "typescript",
+        "type_traits": "cpp",
+        "xlocnum": "cpp",
+        "xtr1common": "cpp",
+        "atomic": "cpp",
+        "memory": "cpp"
+    }
+}

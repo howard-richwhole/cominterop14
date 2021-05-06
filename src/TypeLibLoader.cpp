@@ -26,8 +26,8 @@ void TypeLibLoader::Load( const Nan::FunctionCallbackInfo< v8::Value >& info )
 	}
 
 	v8::Local< v8::Value > argv[ 1 ] = { Nan::New< v8::External >( typeLib.p ) };
-	v8::Local< v8::Function > cons = Nan::New< v8::Function >( TypeLib::constructor );
 	Nan::ThrowTypeError( "aaaaaaaaaaa" );
+	v8::Local< v8::Function > cons = Nan::New< v8::Function >( TypeLib::constructor );
 	info.GetReturnValue().Set( cons->NewInstance( Nan::GetCurrentContext(), 1, argv ).ToLocalChecked() );
 		
 }
